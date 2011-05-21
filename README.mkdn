@@ -1,17 +1,27 @@
-CyanogenMod
-===========
-
 Getting Started
 ---------------
 
-To get started with Android/CyanogenMod, you'll need to get
+To get started with Android, you'll need to get
 familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
-To initialize your local repository using the CyanogenMod trees, use a command like this:
+To initialize your local repository, use a command like this:
 
-    repo init -u git://github.com/dh-harald/cm_android.git -b gingerbread
+    repo init -u git://github.com/SM-gingerbread/sm_android.git -b froyo
 
 Then to sync up:
 
-    repo sync
+    repo sync -j3
 
+Prepare for build:
+
+    . build/envsetup.sh
+    lunch spica-eng
+    vendor/spica/get-google-files -v mdpi
+
+Optionally for gapps:
+
+    export SPICA_WITH_GOOGLE=1
+
+Build:
+
+    mke otapackage
