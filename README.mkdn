@@ -10,7 +10,7 @@ To initialize your local repository, use a command like this:
 
 Then to sync up:
 
-    repo sync -j3
+    repo sync -j35
 
 Prepare for build:
 
@@ -22,6 +22,6 @@ Optionally for gapps:
 
     export SPICA_WITH_GOOGLE=1
 
-Build:
+Build (with apk optimization):
 
-    mke otapackage
+    mka bacon
