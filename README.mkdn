@@ -4,11 +4,11 @@ Getting Started
 To get started with Android, you'll need to get
 familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
-To initialize your local repository, use a command like this:
+To initialize your local repository, use this command:
 
     repo init -u git://github.com/SM-gingerbread/sm_android.git -b gingerbread
 
-Then to sync up:
+Then to download the files:
 
     repo sync -j5
 
