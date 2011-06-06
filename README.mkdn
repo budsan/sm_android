@@ -6,11 +6,11 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository, use a command like this:
 
-    repo init -u git://github.com/SM-gingerbread/sm_android.git -b froyo
+    repo init -u git://github.com/SM-gingerbread/sm_android.git -b gingerbread
 
 Then to sync up:
 
-    repo sync -j35
+    repo sync -j5
 
 Prepare for build:
 
@@ -22,6 +22,6 @@ Optionally for gapps:
 
     export SPICA_WITH_GOOGLE=1
 
-Build (with apk optimization):
+Build recovery zip:
 
-    mka bacon
+    mka otapackage
